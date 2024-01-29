@@ -1,0 +1,154 @@
+body {
+    background-color: #f1f1f1;   
+    color: #000000;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #2d8659;
+}
+
+a.grey {
+    text-decoration: none;
+    color: #D3D3D3;
+}
+
+a.header {
+    text-decoration: none;
+    color: #366e87;
+    font-weight: bold;
+}
+
+a.headerselected {
+    text-decoration: none;
+    color: #366e87;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+  }
+  .underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: 0px;
+    background: #366e87;
+    height: 1.0px;
+    transition-property: width;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+  .underline:hover:after,
+  .underline:focus:after,
+  .underline:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+a.file {
+    color: #c65656;
+}
+
+#container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify;
+}
+
+#header {
+    
+}
+
+#content {
+    padding: 10px;
+}
+
+#nav {
+    width: 780px;
+    margin-left: -20px;
+    padding-bottom: 10px;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#nav li {
+    display: inline;
+    padding: 20px;
+}
+
+#myphoto {
+    width: 180px;
+    float: right;
+    padding: 10px;
+}
+
+#main {
+    width: 575px;
+    float: left;
+}
+
+#footer {
+    clear: both;
+    padding: 10px;
+    text-align: left;
+    font-size: 12px;
+}
+
+
+
+
+#container2 {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header2 {
+    
+}
+
+#content2 {
+    padding: 10px;
+}
+
+#nav2 {
+    width: 780px;
+    margin-left: -20px;
+    padding-bottom: 10px;
+}
+
+#nav2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#nav2 li {
+    display: inline;
+    padding: 20px;
+}
+
+#main2 {
+    width: 780px;
+}
+
+#footer2 {
+    clear: both;
+    padding: 10px;
+    text-align: right;
+}
+
+#talkslist2 {
+    text-align:justify;
+}
