@@ -1,0 +1,262 @@
+
+\documentclass[letterpaper,11pt,UTF8]{ctexart}
+	%Linux Libertine
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage{xcolor}
+\usepackage{framed}
+\usepackage{libertine}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\usepackage{enumerate}
+\usepackage{helvet}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=cyan}
+\title{Taiyang-CV}
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+\setlength{\headheight}{30pt} 
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+ %   \usepackage{lmodern} 
+\usepackage[top=0.75in,bottom=0.75in,right=0.75in,left=0.75in,headheight=30pt,headsep=1cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[english]{babel} % Required to compile in Windows
+\usepackage[letterspace=150]{microtype}
+\usepackage{fontspec}
+%\setlength{\headheight}{110pt} %%or
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+%\usepackage[headheight=500pt]{geometry}
+\pagestyle{fancy}
+%\lhead{Robert Lynch CV}
+\fancyhead[L]{Taiyang Xu, Curriculum Vitae}
+%\fancyfoot[C]{Confidential}
+%\fancyfoot[C] {\thepage}
+ 
+\begin{document}
+
+%\chead{Lynch CV}
+
+
+\moveleft.5\hoffset\centerline{\LARGE\bf Taiyang XU / 徐太阳} % Your name at the top
+
+
+ 
+\moveleft.5\hoffset\centerline{\large  Room 2104, Guanghua East Main Tower, Fudan University} % Your address
+\moveleft.5\hoffset\centerline{\large  220 Handan Rd, Shanghai}
+\moveleft.5\hoffset\centerline{\large  tyxu19@fudan.edu.cn}
+\moveleft.5\hoffset\centerline{\large  https://taiyangxu.github.io}
+%-----------------------------------------------------------  
+
+
+
+\vspace{3mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Employment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{3mm}
+\noindent \textbf{Fudan University}\hfill Shanghai, China\\
+\noindent{\quad}{\emph{Postdoctoral Researcher}} in the Department of Mathematics \hfill 2024 - Present\\
+\noindent{{\qquad}Mentor: \href{https://lunzhangmaths.github.io}{\sl Lun Zhang}}\\
+\vspace{3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{3mm}
+%\flushright{\textbf {}}
+\noindent \textbf{Fudan University}\hfill Shanghai, China\\
+\noindent{\quad}{\emph{Ph.D. in Mathematics}}\hfill 2019 - 2024\\
+\noindent{{\qquad}Thesis: {\sl On the long-time asymptotics of the local and nonlocal mKdV equation under the nonzero background} / {\sl 非零背景下局域和非局域 mKdV 方程--解的长时间渐近分析} }\\
+\noindent{{\qquad}Mentor: \href{https://math.fudan.edu.cn/fa/25/c30607a326181/page.htm}{\sl Engui Fan}}\\
+
+\vspace{2mm} %5mm vertical space
+\noindent\textbf{China University of Mining and Technology}\hfill Xuzhou, Jiangsu Province, China\\
+\noindent{\quad}{\emph{B.Sc. in Mathematics, Distinguished Honor}}\hfill 2015 - 2019\\
+\noindent{{\qquad}Thesis: {\sl Inverse scattering theory and integrability on several kinds of nonlinear evolution equations} / {\sl 几类非线性发展方程的反散射方法及其可积性质的研究}}\\
+\noindent{{\qquad}Thesis advisor: \href{https://faculty.cumt.edu.cn/SFTian/zh_CN/index.htm}{\sl Shoufu Tian}}\\
+
+\vspace{3mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Research Interests}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+Integrable PDEs, Random matrices theory, Determinantal point processes, 
+Orthogonal polynomials, Asymptotic analysis, Riemann-Hilbert (RH) problems, Special functions, 
+Painlev\'e equations.
+\end{flushleft}
+\vspace{3mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Grants}
+\begin{flushleft}
+-- The 76th China Postdoctoral Science Foundation, 2024-2026. / 中国博士后科学基金第76批面上资助.
+\end{flushleft}
+\vspace{3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Research Articles}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\center
+\large\textbf{Preprints}
+\begin{flushleft}
+    \begin{enumerate}[1.]
+   \item Painlev\'{e} transcendents in the defocusing mKdV equation with non-zero boundary conditions (with Zhaoyu Wang and Engui Fan)\\
+    (\href{https://arxiv.org/abs/2306.07073}{arXiv:2306.07073}).
+    \vspace{1.5mm}
+
+    \item Soliton resolution and asymptotic stability of $N$-soliton solutions for the defocusing mKdV equat-\\ion with finite density type initial data (with Engui Fan and Zechuan Zhang)\\ 
+    (\href{https://arxiv.org/abs/2108.03650}{arXiv:2108.03650}).    
+    \end{enumerate}
+\end{flushleft}
+\vspace{3mm}
+
+\large\textbf{Publications in refereed journals}
+\begin{flushleft}
+    \begin{enumerate}[1.]
+    \item Transient asymptotics of the modified Camassa-Holm equation (with Yiling Yang and Lun Zhang) \\
+    {\bf Journal of the London Mathematical Society}, 110 (2024), e12967. \\
+    (\href{https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms.12967}{DOI: 10.1112/jlms.12967}) (\href{https://arxiv.org/abs/2308.06950}{arXiv:2308.06950})
+    \vspace{1.5mm}
+
+    \item On the Cauchy problem of defocusing mKdV equation with finite density initial data: long-time asymptotics in soliton-less regions (with Engui Fan and Zechuan Zhang)\\
+    {\bf Journal of Differential Equations}, 372 (2023), 55-122.\\
+    (\href{https://www.sciencedirect.com/science/article/pii/S002203962300445X?via%3Dihub}{DOI: 10.1016/j.jde.2023.06.038}) (\href{https://arxiv.org/abs/2108.06284}{arXiv:2108.06284})
+    \vspace{1.5mm}
+
+    \item Large-time asymptotics to the focusing nonlocal modified Kortweg-de Vries equation with step-like boundary conditions (with Engui Fan)\\
+    {\bf Studies in Applied Mathematics}, 150 (2023), 1217-1273. \\
+    (\href{https://onlinelibrary.wiley.com/doi/10.1111/sapm.12568}{DOI: 10.1111/sapm.12568}) (\href{https://arxiv.org/abs/2208.01268}{arXiv:2208.01268})
+    \vspace{1.5mm}
+
+    \item Riemann-Hilbert approach for multisoliton solutions of generalized coupled fourth-order nonlinear Schr\"odinger equations
+    (with Weiqi Peng and Shoufu Tian)\\
+    {\bf Mathematical Methods in the Applied Sciences}, 43 (2020), 865-880.\\
+    (\href{https://onlinelibrary.wiley.com/doi/10.1002/mma.5964}{DOI: 10.1002/mma.5964})
+    \end{enumerate}
+\end{flushleft}
+\vspace{3mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Scholarships and Awards}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\center
+\large\textbf{Doctorate}
+\begin{flushleft}
+    -- Graduation with Honors (Shanghai Outstanding Graduate), 2024. / 上海市优秀毕业生(研究生).\\
+    -- Scholarship provided by Huatai Securities Technology, 2023. / 华泰证券科技奖学金.\\
+    -- Scholarship provided by Pacific Insurance Company, 2022. / 太平洋保险奖学金.\\
+    -- Outstanding Doctoral Candidate Scholarship provided by Fudan University, 2021. / 优秀博士候选人奖学金.\\
+    -- Doctoral Scholarship of the Year provided by Fudan University, 2019-2023. / 博士生学年学业奖学金.
+\end{flushleft}
+\vspace{3mm}
+
+\large\textbf{Undergraduate}
+\begin{flushleft}
+    -- Outstanding Undergraduates in China University of Mining and Technology, 2015-2019. / 中国矿业大学优秀毕业生.
+\end{flushleft}
+\vspace{3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Teaching Activities}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\center
+\begin{flushleft}
+-- Spring, 2024: TA of Methods of Asymptotic Analysis (MATH630117), Fudan University.\\
+-- Fall, 2021: TA of Calculus A (MATH120021.02), Fudan University.\\
+-- Spring, 2020: TA of Calculus B (MATH120004.01), Fudan University (Online).\\
+-- Fall, 2019: TA of Calculus B (MATH120003.01), Fudan University.
+\end{flushleft}
+\vspace{3mm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Seminars}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+\small{(\textcolor{red}{``RMT = Random Matrix Theory'', ``IS = Integrable Systems''. Here I only list those talks given by myself.})}\\
+-- RMT seminar in FDU: \textit{Fredholm determinants from Schr\"odinger type equations, and deformation of Tracy-Widom distribution}, Oct, 2024.\\
+-- RMT seminar in FDU: \textit{Biorthogonal measures, polymer partition functions, and random matrices}, April, 2024.\\
+-- IS seminar  in FDU: \textit{Painlev\'e type asymptotics for the Camassa-Holm equation}, Oct, 2022.\\
+-- RMT seminar in FDU: \textit{A Riemann-Hilbert approach to Fredholm determinants of Hankel composition operators: scalar-valued kernels}, Sept - Oct, 2022.\\
+-- IS seminar in FDU: \textit{Primitive potentials and bounded solutions of the KdV equation}, Sept, 2022.\\
+-- IS seminar in FDU: \textit{Soliton V. The gas: Fredholm determinants, analysis and the rapid oscillations behind the kinetic equation}, May - June, 2022.\\
+-- RMT seminar in FDU: \textit{Airy kernel determinant solutions to the KdV equation and integro-differential Painlev\'e equations}, Dec, 2021 and Mar, 2022.\\
+-- IS seminar in FDU: \textit{The defocusing nonlinear Schr\"odinger equation with step-like oscillatory initial data}, Oct, 2021.\\
+-- RMT seminar FDU : \textit{Momenta spacing distributions in anharmonic and the higher order finite temperature Airy kernel}, Oct, 2021.\\
+-- IS seminar in FDU: \textit{Long-Time behavior of the non-focusing nonlinear Schr\"odinger equation -- a case study}, April, 2021.\\
+-- RMT seminar in FDU: \textit{On the origins of Riemann-Hilbert problems in mathematics}, Nov, 2020 and Mar, 2021.
+\end{flushleft}
+\vspace{3mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Conferences}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+\small{(``\textcolor{red}{$^{*}$}'' \textcolor{red}{indicates that I gave a talk.})}\\
+-- \href{http://newton.kias.re.kr/~namgyu/index.html/Jeju24/}{Random Matrices and Related Topics}, Jeju island, Korea, 6-10 May, 2024.\\
+-- \textcolor{red}{$^{*}$}\href{https://math.nbu.edu.cn/info/1084/6870.htm}{The 15th Hemudu Forum on Integrable Systems}, Ningbo, China, 24--26 Nov, 2023 (``\textit{Integrable PDEs with nonzero (symmetric and asymmetric) boundary conditions: large-time and transient asymptotics}''). \\
+-- \href{https://focm2023.pages.math.cnrs.fr}{Foundations of Computational Mathematics 2023 (FoCM2023)}, Paris, France, 12--21 June, 2023.\\
+-- \href{http://math.nbu.edu.cn/info/1084/3673.htm}{The 13rd Hemudu Forum on Integrable Systems}, Ningbo, China, 15 - 17 Oct, 2021.
+\end{flushleft}	
+\vspace{3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Summer School}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+    --  \href{https://sites.google.com/umich.edu/rmtschool/}{Random Matrix Summer School}, University of Michigan, Ann Arbor, USA, 17-28 June, 2024.
+\end{flushleft}
+\vspace{3mm}    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Ohter Credits}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+    \href{https://arxiv.org/a/xu_t_1.html}{arXiv}, \href{https://www.scopus.com/authid/detail.uri?authorId=57211624682}{Scopus}, 
+    \href{https://scholar.google.com/citations?user=rVbKhBYAAAAJ&hl=zh-CN&oi=ao}{Google Scholar Profile}, \href{https://mathscinet.ams.org/mathscinet/author?authorId=1360469}{MathSciNet} as well as \href{https://orcid.org/0000-0003-0348-877X}{ORCID}.
+\end{flushleft}
+
+\end{document}
