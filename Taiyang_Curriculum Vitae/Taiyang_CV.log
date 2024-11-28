@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  15 NOV 2024 10:04
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  28 NOV 2024 19:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1035,33 +1035,37 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 101.
+(Font)              scaled to size 10.95pt on input line 100.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sl' in size <10.95> not available
-(Font)              Font shape `TU/LinLibertine(0)/m/it' tried instead on input line 102.
+(Font)              Font shape `TU/LinLibertine(0)/m/it' tried instead on input line 101.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 102.
+(Font)              scaled to size 10.95pt on input line 101.
 LaTeX Font Info:    Font shape `TU/SongtiSCLight(0)/m/sl' in size <10.95> not available
-(Font)              Font shape `TU/SongtiSCLight(0)/m/it' tried instead on input line 112.
+(Font)              Font shape `TU/SongtiSCLight(0)/m/it' tried instead on input line 110.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 137.
+(Font)              scaled to size 12.0pt on input line 134.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 144.
+(Font)              <12> on input line 140.
  [1
 
 ]
+
+LaTeX Warning: The counter will not be printed.
+             The label is: -- on input line 174.
+
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 182.
- [2]
+(Font)              scaled to size 12.0pt on input line 176.
+[2]
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 225.
+(Font)              scaled to size 10.0pt on input line 226.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 225.
+(Font)              scaled to size 7.0pt on input line 226.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 225.
+(Font)              scaled to size 5.0pt on input line 226.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 225.
+(Font)              <7> on input line 226.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 225.
+(Font)              <5> on input line 226.
  [3] [4] (./Taiyang_CV.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1070,11 +1074,11 @@ Package rerunfilecheck Info: File `Taiyang_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28839 strings out of 476683
- 626405 string characters out of 5804047
+ 28842 strings out of 476683
+ 626498 string characters out of 5804047
  1864018 words of memory out of 5000000
- 48710 multiletter control sequences out of 15000+600000
- 519088 words of font info for 112 fonts, out of 8000000 for 9000
+ 48712 multiletter control sequences out of 15000+600000
+ 519096 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,12n,112p,1390b,564s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
