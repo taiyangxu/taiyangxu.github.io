@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  8 APR 2025 18:10
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  24 APR 2025 09:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -744,52 +744,52 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 92.
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 143.
+             The label is: -- on input line 138.
 
 [1
 
 ]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 161.
+             The label is: -- on input line 156.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 173.
+             The label is: -- on input line 168.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 182.
+             The label is: -- on input line 177.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 191.
+             The label is: -- on input line 186.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 208.
+             The label is: -- on input line 203.
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: -- on input line 216.
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: -- on input line 228.
 
 [2]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 221.
-
-
-LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 233.
-
-
-LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 245.
+             The label is: -- on input line 240.
 
 [3] ) 
 Here is how much of TeX's memory you used:
  21279 strings out of 476683
  449636 string characters out of 5804047
- 1863018 words of memory out of 5000000
+ 1862018 words of memory out of 5000000
  41327 multiletter control sequences out of 15000+600000
  513366 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 87i,8n,112p,446b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,8n,112p,446b,355s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on CV_Taiyang.pdf (3 pages).
