@@ -160,3 +160,7 @@ a.file {
 #talkslist2 {
     text-align:justify;
 }
+
+strong {
+  font-weight: bold;
+}
