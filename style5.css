@@ -4,6 +4,10 @@ body {
     font-family: 'EB Garamond', sans-serif;
 }
 
+h1 {
+    font-size: 28px;
+}
+
 h2 {
     font-size: 22px;
 }
