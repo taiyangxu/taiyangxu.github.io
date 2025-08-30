@@ -5,15 +5,11 @@ body {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 p {
-    font-size: 16px;
-}
-
-ol {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 a {
@@ -78,12 +74,12 @@ a.file {
 }
 
 #header {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 #content {
     padding: 10px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 #nav {
