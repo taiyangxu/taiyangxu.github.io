@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  30 AUG 2025 23:13
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  3 SEP 2025 22:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -833,6 +833,7 @@ LaTeX Warning: The counter will not be printed.
 LaTeX Warning: The counter will not be printed.
              The label is: -- on input line 203.
 
+[2]
 
 LaTeX Warning: The counter will not be printed.
              The label is: -- on input line 214.
@@ -846,7 +847,6 @@ Overfull \hbox (4.76965pt too wide) in paragraph at lines 215--216
 LaTeX Warning: The counter will not be printed.
              The label is: -- on input line 219.
 
-[2]
 
 LaTeX Warning: The counter will not be printed.
              The label is: -- on input line 242.
