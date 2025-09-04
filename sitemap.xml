@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <!-- 你的首页 -->
-    <loc>https://taiyangxu.github.io/index.html<loc>
+    <loc>https://taiyangxu.github.io/index.html</loc>
     <lastmod>2025-09-03</lastmod> <!-- 修改为最后更新日期 -->
     <priority>1.0</priority>
   </url>
