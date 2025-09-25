@@ -3,37 +3,37 @@
   <url>
     <!-- 你的首页 -->
     <loc>https://taiyangxu.github.io/index.html</loc>
-    <lastmod>2025-09-15</lastmod> <!-- 修改为最后更新日期 -->
+    <lastmod>2025-09-25</lastmod> <!-- 修改为最后更新日期 -->
     <priority>1.0</priority>
   </url>
   <!-- 继续添加你所有的其他页面... -->
   <url>
     <loc>https://taiyangxu.github.io/research.html</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-09-25</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://taiyangxu.github.io/publications.html</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-09-25</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://taiyangxu.github.io/teaching.html</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-09-25</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://taiyangxu.github.io/events.html</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-09-25</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://taiyangxu.github.io/miscellanea.html</loc>
-    <lastmod>2025-09-15</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2025-09-25</lastmod>
+    <priority>0.1</priority>
   </url>
 </urlset>

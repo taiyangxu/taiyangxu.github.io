@@ -109,7 +109,14 @@
 														
 	
 <p>
-	(Last update: 19/09/2025
+	(Last update: <span id="last-update"></span>
+	<script>
+		const d = new Date(document.lastModified);
+		const formatted = d.getDate().toString().padStart(2, '0') + '/' +
+						  (d.getMonth() + 1).toString().padStart(2, '0') + '/' +
+						  d.getFullYear();
+		document.getElementById('last-update').textContent = formatted;
+	</script>
 	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	<span id="busuanzi_container_site_pv" style='display:none'> & Total views: <span id="busuanzi_value_site_pv"></span></span>)
 </p>
