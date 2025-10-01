@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  26 SEP 2025 20:20
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  1 OCT 2025 13:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/xutaiyang/Documents/Taiyang_Certifications, WEB and CV/taiyangxu.github.io/taiyangxu.github.io (Personal Website and CV)/CV_Taiyang/CV_Taiyang"
-(/Users/xutaiyang/Documents/Taiyang_Certifications, WEB and CV/taiyangxu.github.io/taiyangxu.github.io (Personal Website and CV)/CV_Taiyang/CV_Taiyang.tex
+**"/Users/xutaiyang/Documents/Taiyang_Certifications, WEB and CV/taiyangxu.github.io/CV_Taiyang/CV_Taiyang"
+(/Users/xutaiyang/Documents/Taiyang_Certifications, WEB and CV/taiyangxu.github.io/CV_Taiyang/CV_Taiyang.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (./res.cls
 Document Style `res' <26 Sep 89>.
@@ -849,16 +849,16 @@ LaTeX Warning: The counter will not be printed.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 244.
+             The label is: -- on input line 243.
 
 [3] ) 
 Here is how much of TeX's memory you used:
  22411 strings out of 476683
- 467875 string characters out of 5804047
- 1864018 words of memory out of 5000000
+ 467737 string characters out of 5804047
+ 1863018 words of memory out of 5000000
  42428 multiletter control sequences out of 15000+600000
  513366 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 87i,8n,112p,1172b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,8n,112p,1126b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on CV_Taiyang.pdf (3 pages).
