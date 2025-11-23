@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  23 NOV 2025 13:18
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  23 NOV 2025 21:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -826,23 +826,13 @@ LaTeX Warning: The counter will not be printed.
              The label is: -- on input line 177.
 
 
-Overfull \hbox (14.10628pt too wide) in paragraph at lines 178--179
-[]\TU/LinLibertine(0)/m/n/10 “\TU/LinLibertine(0)/m/it/10 Confluent hypergeometric kernel determinant on multiple large intervals\TU/LinLibertine(0)/m/n/10 ”, []Bielefeld-Melbourne-
- []
-
-
-Overfull \hbox (7.75963pt too wide) in paragraph at lines 182--183
-[]\TU/LinLibertine(0)/m/n/10 “\TU/LinLibertine(0)/m/it/10 Integrable PDEs with nonzero boundary conditions: large-time asymptotics\TU/LinLibertine(0)/m/n/10 ”, []The 15th Hemudu
+Overfull \hbox (2.92294pt too wide) in paragraph at lines 178--179
+[]\TU/LinLibertine(0)/m/n/10 “\TU/LinLibertine(0)/m/it/10 Confluent hypergeometric kernel determinant on multiple large intervals\TU/LinLibertine(0)/m/n/10 ” (invited), []Bielefeld-
  []
 
 
 LaTeX Warning: The counter will not be printed.
              The label is: -- on input line 190.
-
-
-Overfull \hbox (4.76965pt too wide) in paragraph at lines 191--192
-[]\TU/LinLibertine(0)/m/n/10 “\TU/LinLibertine(0)/m/it/10 Some asymptotic problems in mathematical physics\TU/LinLibertine(0)/m/n/10 ”, Shanghai Institute of Technical Physics,
- []
 
 
 LaTeX Warning: The counter will not be printed.
