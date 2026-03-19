@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  5 JAN 2026 20:46
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  19 MAR 2026 22:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/xutaiyang/Documents/Taiyang_Certifications_WEB_CV/taiyangxu.github.io/CV_Taiyang/CV_Taiyang
-(/Users/xutaiyang/Documents/Taiyang_Certifications_WEB_CV/taiyangxu.github.io/CV_Taiyang/CV_Taiyang.tex
+**/Users/xutaiyang/Documents/Taiyang_Certifications_WEB_CV/taiyangxu_github_io/CV_Taiyang/CV_Taiyang
+(/Users/xutaiyang/Documents/Taiyang_Certifications_WEB_CV/taiyangxu_github_io/CV_Taiyang/CV_Taiyang.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (./res.cls
 Document Style `res' <26 Sep 89>.
@@ -815,52 +815,43 @@ LaTeX Warning: The counter will not be printed.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 161.
+             The label is: -- on input line 160.
 
 
-LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 170.
-
-
-LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 177.
-
-
-Overfull \hbox (2.92294pt too wide) in paragraph at lines 179--180
+Overfull \hbox (2.92294pt too wide) in paragraph at lines 162--163
 []\TU/LinLibertine(0)/m/n/10 “\TU/LinLibertine(0)/m/it/10 Confluent hypergeometric kernel determinant on multiple large intervals\TU/LinLibertine(0)/m/n/10 ” (invited), []Bielefeld-
  []
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 191.
+             The label is: -- on input line 174.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 196.
+             The label is: -- on input line 219.
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: -- on input line 231.
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: -- on input line 239.
 
 [2]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 214.
+             The label is: -- on input line 248.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 224.
+             The label is: -- on input line 257.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 241.
+             The label is: -- on input line 270.
 
-
-LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 252.
-
-[3]
-
-LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 264.
-
-[4] ) 
+[3] ) 
 Here is how much of TeX's memory you used:
  22411 strings out of 476683
  467722 string characters out of 5804047
@@ -870,4 +861,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  87i,8n,112p,1119b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on CV_Taiyang.pdf (4 pages).
+Output written on CV_Taiyang.pdf (3 pages).
