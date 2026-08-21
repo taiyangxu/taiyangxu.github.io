@@ -239,6 +239,7 @@ hr {
 /* Text elements */
 p {
 	margin-bottom: 18px;
+	text-align: justify;
 }
 ul {
 	list-style: square;
