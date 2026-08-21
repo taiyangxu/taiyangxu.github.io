@@ -240,6 +240,7 @@ hr {
 p {
 	margin-bottom: 18px;
 	text-align: justify;
+	hyphens: auto;
 }
 ul {
 	list-style: square;
