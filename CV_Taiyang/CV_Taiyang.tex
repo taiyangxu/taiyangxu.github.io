@@ -40,7 +40,13 @@
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage{enumerate}
-\usepackage{etaremune}
+\usepackage[leftmargin=1.4em,labelwidth=1.2em,labelsep=0.2em]{etaremune}
+% Apply left-aligned labels after etaremune initializes the list.
+\NewCommandCopy{\cvEtaremune}{\etaremune}
+\renewcommand{\etaremune}[1][]{%
+    \cvEtaremune[#1]%
+    \renewcommand{\makelabel}[1]{##1\hfil}%
+}
 \usepackage{datetime}
 \usepackage{hyperref}\hypersetup{hidelinks}
 % Increase text height
@@ -103,8 +109,7 @@ Orthogonal polynomials, Asymptotic analysis, Riemann-Hilbert problems, Special f
 \section{Publications and Preprints}
 Listed in reverse chronological order of first public availability.
 
-\begin{etaremune}[leftmargin=1.4em,labelwidth=1.2em,labelsep=0.2em]
-    \renewcommand{\makelabel}[1]{#1\hfil}
+\begin{etaremune}
     \item Critical asymptotics of the Camassa-Holm equation in the small dispersion limit at the point of gradient catastrophe (with Yiling Yang and Lun Zhang)\\
     {\sl available upon request}
     %{\sl \href{}{arXiv:}}
