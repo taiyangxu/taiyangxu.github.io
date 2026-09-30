@@ -200,7 +200,7 @@
 \ExecuteOptions{overlapped,centered}
 \ProcessOptions\relax
 
-\nofiles	     % resume's don't need .aux files
+% Keep auxiliary files enabled for etaremune's automatic reverse numbering.
 
 
 \newtoks\tabular@text		    % holds the current list being processed
