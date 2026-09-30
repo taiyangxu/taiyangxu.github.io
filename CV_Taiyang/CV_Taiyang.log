@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  30 SEP 2026 09:14
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  30 SEP 2026 09:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -806,12 +806,12 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sl' in size <10> not availa
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 87.
 
-Overfull \hbox (0.7829pt too wide) in paragraph at lines 114--116
+Overfull \hbox (0.7829pt too wide) in paragraph at lines 115--117
 []\TU/LinLibertine(0)/m/n/10 Confluent hypergeometric kernel determinant on multiple large intervals (with Lun Zhang
  []
 
 
-Overfull \hbox (0.31453pt too wide) in paragraph at lines 132--134
+Overfull \hbox (0.31453pt too wide) in paragraph at lines 133--135
 []\TU/LinLibertine(0)/m/n/10 Soliton resolution and asymptotic stability of $\OML/cmm/m/it/10 N$\TU/LinLibertine(0)/m/n/10 -soliton solutions for the defocusing mKdV
  []
 
@@ -820,53 +820,53 @@ Overfull \hbox (0.31453pt too wide) in paragraph at lines 132--134
 ]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 143.
+             The label is: -- on input line 144.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 159.
+             The label is: -- on input line 160.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 171.
+             The label is: -- on input line 172.
 
 
-Overfull \hbox (2.92294pt too wide) in paragraph at lines 174--175
+Overfull \hbox (2.92294pt too wide) in paragraph at lines 175--176
 []\TU/LinLibertine(0)/m/n/10 “\TU/LinLibertine(0)/m/it/10 Confluent hypergeometric kernel determinant on multiple large intervals\TU/LinLibertine(0)/m/n/10 ” (invited), []Bielefeld-
  []
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 186.
+             The label is: -- on input line 187.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 216.
+             The label is: -- on input line 217.
 
 [2]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 229.
+             The label is: -- on input line 230.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 238.
+             The label is: -- on input line 239.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 246.
+             The label is: -- on input line 247.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 255.
+             The label is: -- on input line 256.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 264.
+             The label is: -- on input line 265.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: -- on input line 277.
+             The label is: -- on input line 278.
 
 [3] (./CV_Taiyang.aux)
 Package rerunfilecheck Info: File `CV_Taiyang.out' has not changed.
@@ -875,10 +875,10 @@ Package rerunfilecheck Info: File `CV_Taiyang.out' has not changed.
 Here is how much of TeX's memory you used:
  22501 strings out of 476683
  469550 string characters out of 5804047
- 1864018 words of memory out of 5000000
+ 1863018 words of memory out of 5000000
  42507 multiletter control sequences out of 15000+600000
  513366 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 87i,8n,112p,1031b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,8n,112p,1031b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on CV_Taiyang.pdf (3 pages).
