@@ -1,299 +1,304 @@
-% Important note:
-% This template requires the res.cls file to be in the same directory as the
-% .tex file. The res.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%-------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%-------------------------------------------------------------------------------
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% You can have multiple style options the legal options ones are:
-%
-%   centered:	the name and address are centered at the top of the page 
-%				(default)
-%
-%   line:		the name is the left with a horizontal line then the address to
-%				the right
-%
-%   overlapped:	the section titles overlap the body text (default)
-%
-%   margin:		the section titles are to the left of the body text
-%		
-%   11pt:		use 11 point fonts instead of 10 point fonts
-%
-%   12pt:		use 12 point fonts instead of 10 point fonts
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\documentclass[margin]{res}  
-
-% Default font is the helvetica postscript font
-\usepackage{helvet}
+\documentclass[12pt,a4paper]{article}
+\usepackage[english]{babel}
+\usepackage{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{currvita}
 \usepackage{xcolor}
-\usepackage{framed}
-\usepackage{libertine}
-\usepackage{tocloft}
-\usepackage{graphicx}
-\usepackage{multirow}
-\usepackage{tabularx}
-\usepackage{enumerate}
-\usepackage[leftmargin=1.4em,labelwidth=1.2em,labelsep=0.2em]{etaremune}
-% Apply left-aligned labels after etaremune initializes the list.
-\NewCommandCopy{\cvEtaremune}{\etaremune}
-\renewcommand{\etaremune}[1][]{%
-    \cvEtaremune[#1]%
-    \renewcommand{\makelabel}[1]{##1\hfil}%
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage[left=2cm,right=2cm]{geometry}
+\usepackage{titlesec}
+%\usepackage{needspace}
+% A small, shared increase in spacing between items in every list type.
+\newlength{\cvitemextraspace}
+\setlength{\cvitemextraspace}{1pt}
+% Match the current itemize indentation, label alignment, and spacing.
+\usepackage[
+  leftmargin=1.4em,
+  itemsep=\dimexpr0.5\baselineskip+\cvitemextraspace\relax,
+  parsep=0pt,
+  topsep=0.4\baselineskip
+]{etaremune}
+
+\titleformat{\section}{\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule]
+\titleformat{\subsection}{\bfseries\raggedright\large}{}{0em}{}[]
+
+\newcommand{\emailfont}{\sffamily}
+\newcommand{\CVAuthor}{\textbf{Taiyang Xu}}
+\newcommand{\CVTitle}{Taiyang Xu -- Curriculum Vitae}
+\newcommand{\CVWebpage}{https://taiyangxu.github.io/}
+\hypersetup{pdftitle={\CVTitle},pdfauthor={Taiyang Xu}}
+
+% Automatically print the compilation month and year at the right margin.
+\newcommand{\cvmonthyear}{%
+  \ifcase\month\or
+    January\or February\or March\or April\or May\or June\or
+    July\or August\or September\or October\or November\or December%
+  \fi~\number\year
 }
-\usepackage{datetime}
-\usepackage{hyperref}\hypersetup{hidelinks}
-% Increase text height
-\textheight=700pt
+\date{\hfill\cvmonthyear}
+
+\setlist[itemize]{label=--,leftmargin=1.4em,
+  itemsep=\dimexpr0.2\baselineskip+\cvitemextraspace\relax,
+  parsep=0pt,topsep=0.4\baselineskip}
+% Apply the same extra spacing after currvita initializes its dated lists.
+\NewCommandCopy{\cvOriginalList}{\cvlist}
+\renewcommand{\cvlist}[1]{%
+  \cvOriginalList{#1}%
+  \addtolength{\itemsep}{\cvitemextraspace}%
+}
+\setlength{\emergencystretch}{2em}
+\clubpenalty=4000
+\widowpenalty=4000
+
 
 \begin{document}
+% currvita sets its default label width at begin-document; measure afterwards.
+\settowidth{\cvlabelwidth}{\cvlabelfont 09/2019 -- 06/2024}
+\begin{cv}{}
 
-%-------------------------------------------------------------------------------
-%	NAME AND ADDRESS SECTION
-%-------------------------------------------------------------------------------
-\name{Taiyang Xu}
+\begin{center}
+  {\LARGE\bfseries Curriculum Vitae}
+\end{center}
+\vspace{0.5\baselineskip}
 
-% Note that addresses can be used for other contact information:
-% -phone numbers
-% -email addresses
-% -linked-in profile
+\noindent\CVAuthor\par
+\noindent
+\begin{tabular}[t]{@{}l@{\hspace{0.5em}}l@{}}
+  \textbf{Address:} & Universit\'e catholique de Louvain\\
+                   & Institut de Recherche en Math\'ematique et Physique\\
+                   & Chemin du Cyclotron 2\\
+                   & 1348 Louvain-la-Neuve \\
+                   & Belgium
+\end{tabular}\par
+\noindent\textbf{Electronic mail:} \href{mailto:taiyang.xu@uclouvain.be}{{\emailfont taiyang [dot] xu [at] uclouvain [dot] be}}\\
+\textbf{Web site:} \href{\CVWebpage}{https://taiyangxu.github.io}\\
+\textbf{Citizenship:} Chinese \\
+\textbf{Marital status:} married
 
-\address{{\bf Universit\'e catholique de Louvain}\\Chemin du Cyclotron 2\\ 1348 Louvain-la-Neuve, Belgium}
-\address{\\ \hfill homepage: \href{https://taiyangxu.github.io/}{taiyangxu.github.io} \\ Email: \href{mailto:taiyang.xu@uclouvain.be}{taiyang [dot] xu [at] uclouvain [dot] be} }
-
-% Uncomment to add a third address
-%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
-%-------------------------------------------------------------------------------
-
-\begin{resume} 
-%-------------------------------------------------------------------------------
-\section{Current position}
-\textbf{Universit\'e catholique de Louvain}, Louvain-la-Neuve, Belgium \hfill 08/2026 -- now\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Employment}
+\begin{cvlist}{}
+\item[08/2026 -- now]
+\textbf{Universit\'e catholique de Louvain}, Louvain-la-Neuve, Belgium\\
 Institut de Recherche en Math\'ematique et Physique \\
 Postdoctoral Researcher (Mentor: Prof. \href{https://sites.google.com/view/cchar/home?authuser=0}{Christophe Charlier})\\
 Member of group \href{https://sites.google.com/view/rmtww/home}{\slshape Random matrices, tilings, and water waves}
-%-------------------------------------------------------------------------------
 
-%-------------------------------------------------------------------------------
-\section{Past positions}
-\textbf{Fudan University}, Shanghai, China \hfill 07/2024 -- 06/2026\\
+\item[07/2024 -- 06/2026]
+\textbf{Fudan University}, Shanghai, China\\
 Department of Mathematics \\
 Postdoctoral Fellow (Mentor: Prof. \href{https://lunzhangmaths.github.io}{Lun Zhang})
-%-------------------------------------------------------------------------------
+\end{cvlist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
-\textbf{Fudan University}, Shanghai, China \hfill 09/2019 -- 06/2024\\
-Ph.D. in Mathematics, supervisor Prof. \href{https://math.fudan.edu.cn/fa/25/c30607a326181/page.htm}{Engui Fan} \\
-Thesis title: ``{\sl On the long-time asymptotics of the local and nonlocal mKdV equation under the nonzero background}''
-\par
+\begin{cvlist}{}
+  \item[09/2019 -- 06/2024]
+    \textbf{Ph.D. in Mathematics}\\
+    \textbf{Fudan University}, Shanghai, China\\
+    Supervisor: Prof. \href{https://math.fudan.edu.cn/fa/25/c30607a326181/page.htm}{Engui Fan}\\
+    Thesis title: ``{\slshape On the long-time asymptotics of the local and nonlocal mKdV equation under the nonzero background}''
 
-\textbf{China University of Mining and Technology}, Xuzhou, China \hfill 09/2015 -- 06/2019\\ 
-B.Sc. in Mathematics, Distinguished Honor \\
-Thesis title: ``{\sl Inverse scattering theory and integrability on several kinds of nonlinear evolution equations}''
-%-------------------------------------------------------------------------------
+  \item[09/2015 -- 06/2019]
+    \textbf{B.Sc. in Mathematics}, Distinguished Honor\\
+    \textbf{China University of Mining and Technology}, Xuzhou, China\\
+    Thesis title: ``{\slshape Inverse scattering theory and integrability on several kinds of nonlinear evolution equations}''
+\end{cvlist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%-------------------------------------------------------------------------------
-\section{Research interests}
-Integrable ODEs/PDEs, Random matrix theory, Determinantal point processes, 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Interests}
+Integrable ODEs/PDEs, Random matrix theory, Determinantal point processes,
 Orthogonal polynomials, Asymptotic analysis, Riemann-Hilbert problems, Special functions \dots
-%-------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%-------------------------------------------------------------------------------
-\section{Publications and preprints}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications and Preprints}
 Listed in reverse chronological order of first public availability.
 
 \begin{etaremune}
-    \item Moment generating function of the tacnode process \\
+    \item \textbf{Moment generating function of the tacnode process} \\
     \href{https://arxiv.org/abs/2606.17771}{arXiv:2606.17771}
 
-    \item Critical asymptotics of the Camassa-Holm equation in the small dispersion limit at the point of gradient catastrophe (with Yiling Yang and Lun Zhang)\\
+    \item \textbf{Critical asymptotics of the Camassa-Holm equation in the small dispersion limit at the point of gradient catastrophe} (with Yiling Yang and Lun Zhang)\\
     available upon request
     %(\href{}{arXiv:})
 
-    \item Confluent hypergeometric kernel determinant on multiple large intervals (with Lun Zhang and Zhengyang Zhao)\\
+    \item \textbf{Confluent hypergeometric kernel determinant on multiple large intervals} (with Lun Zhang and Zhengyang Zhao)\\
     \href{https://arxiv.org/abs/2508.10463}{arXiv:2508.10463}
 
-    \item Transient asymptotics of the modified Camassa-Holm equation (with Yiling Yang and Lun Zhang) \\
+    \item \textbf{Transient asymptotics of the modified Camassa-Holm equation} (with Yiling Yang and Lun Zhang) \\
     \href{https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms.12967}{{\sl Journal of the London Mathematical Society}, 110 (2024), e12967}. / \href{https://arxiv.org/abs/2308.06950}{arXiv:2308.06950}
 
-    \item Painlev\'{e} transcendents in the defocusing mKdV equation with non-zero boundary conditions (with Engui Fan and Zhaoyu Wang)\\
+    \item \textbf{Painlev\'{e} transcendents in the defocusing mKdV equation with non-zero boundary conditions} (with Engui Fan and Zhaoyu Wang)\\
     \href{https://link.springer.com/article/10.1007/s00220-025-05362-x}{{\sl Communications in Mathematical Physics}, 406 (2025), 181}. / \href{https://arxiv.org/abs/2306.07073}{arXiv:2306.07073}
 
-    \item Large-time asymptotics to the focusing nonlocal modified Kortweg-de Vries equation with step-like boundary conditions (with Engui Fan)\\
+    \item \textbf{Large-time asymptotics to the focusing nonlocal modified Kortweg-de Vries equation with step-like boundary conditions} (with Engui Fan)\\
     \href{https://onlinelibrary.wiley.com/doi/10.1111/sapm.12568}{{\sl Studies in Applied Mathematics}, 150 (2023), 1217--1273}. / \href{https://arxiv.org/abs/2208.01268}{arXiv:2208.01268}
 
-    \item On the large-time asymptotics of the defocusing mKdV equation with step-like initial data (with Yidan Zhang)\\
+    \item \textbf{On the large-time asymptotics of the defocusing mKdV equation with step-like initial data} (with Yidan Zhang)\\
     \href{https://doi.org/10.1007/s11040-026-09579-7}{{\sl Mathematical Physics, Analysis and Geometry}, 29 (2026), 38}. / \href{https://arxiv.org/abs/2204.01299}{arXiv:2204.01299}
 
-    \item On the Cauchy problem of defocusing mKdV equation with finite density initial data: long-time asymptotics in soliton-less regions (with Engui Fan and Zechuan Zhang)\\
+    \item \textbf{On the Cauchy problem of defocusing mKdV equation with finite density initial data: long-time asymptotics in soliton-less regions} (with Engui Fan and Zechuan Zhang)\\
     \href{https://www.sciencedirect.com/science/article/pii/S002203962300445X?via%3Dihub}{{\sl Journal of Differential Equations}, 372 (2023), 55--122}. / \href{https://arxiv.org/abs/2108.06284}{arXiv:2108.06284}
 
-    \item Soliton resolution and asymptotic stability of $N$-soliton solutions for the defocusing mKdV equation with a non-vanishing background (with Engui Fan and Zechuan Zhang)\\ 
+    \item \textbf{Soliton resolution and asymptotic stability of $N$-soliton solutions for the defocusing mKdV equation with a non-vanishing background} (with Engui Fan and Zechuan Zhang)\\
     \href{https://doi.org/10.1016/j.physd.2025.134526}{{\sl Physica D: Nonlinear Phenomena}, 472 (2025), 134526}. / \href{https://arxiv.org/abs/2108.03650}{arXiv:2108.03650}
 
-    \item Riemann-Hilbert approach for multisoliton solutions of generalized coupled fourth-order nonlinear Schr\"odinger equations
+    \item \textbf{Riemann-Hilbert approach for multisoliton solutions of generalized coupled fourth-order nonlinear Schr\"odinger equations}
     (with Weiqi Peng and Shoufu Tian)\\
     \href{https://onlinelibrary.wiley.com/doi/10.1002/mma.5964}{{\sl Mathematical Methods in the Applied Sciences}, 43 (2020), 865--880}.
 \end{etaremune}
-%-------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Grants}
-\begin{enumerate}[--]
-\item Shanghai Post-doctoral Excellence Program (Grant No. 2024100) \hfill 07/2024 -- 06/2026  \\
+\begin{cvlist}{}
+\item[07/2024 -- 06/2026]
+Shanghai Post-doctoral Excellence Program (Grant No. 2024100)\\
 Project: Riemann-Hilbert method for several asymptotic problems related to universality from integrable systems and random matrix theory  \\
 Role: Principal Investigator
 
-\item China Postdoctoral Science Foundation (Grant No. 2024M760480)  \hfill 07/2024 -- 06/2026\\
+\item[07/2024 -- 06/2026]
+China Postdoctoral Science Foundation (Grant No. 2024M760480)\\
 Project: Semiclassical asymptotics and universality for nonlinear integrable shallow water wave systems \\
 Role: Principal Investigator
-\end{enumerate}
-%-------------------------------------------------------------------------------
+\end{cvlist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
-%-------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Teaching}
-\textbf{09/2019 -- 07/2026 @Fudan}
-\begin{enumerate}[--]
+\textbf{Fudan University (During 09/2019 -- 07/2026)}
+\begin{itemize}
 \item Fall, 2025: Recitation \& Tutorial Instructor of Mathematical Analysis III (MATH130001.04).
 \item Spring, 2024: TA of Methods of Asymptotic Analysis (MATH630117).
 \item Fall, 2021: TA of Calculus A (MATH120021.02).
 \item Spring, 2020: TA of Calculus B (MATH120004.01) (Online).
 \item Fall, 2019: TA of Calculus B (MATH120003.01).
-\end{enumerate}
-%-------------------------------------------------------------------------------
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%------------------------------------------------------------------------------
-\section{Research talks}
-\begin{enumerate}[--]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Talks}
+\begin{itemize}
     \item ``{\slshape Large gap asymptotics for the confluent hypergeometric kernel determinant}'' (invited), \href{https://sites.google.com/view/fnrs-cg-probability/2d-meeting-2026}{2nd meeting of the FNRS contact group devoted to probability theory}, Université libre de Bruxelles, Brussel, Belgium, 15--16 Oct, 2026.
     \item ``{\slshape On the Fredholm determinants}'' (invited), \href{http://maths.jsnu.edu.cn/5b/96/c19269a416662/page.htm}{Seminar @Jiangsu Normal University}, Xuzhou, China, 23 Jun, 2026.
     \item ``{\slshape Dubrovin's conjecture for the Camassa-Holm equation}'' (invited), 3rd Workshop on Integrable Systems and Random Matrix Theory 2026, Dongguan, China, 4--17 Jan, 2026.
     \item ``{\slshape Confluent hypergeometric kernel determinant on multiple large intervals}'' (invited), \href{https://www.bms-seminar.org/home}{Bielefeld-Melbourne-Seoul Online Random Matrix Seminar}, 15th Oct, 2025.
-    \item ``{\slshape Confluent hypergeometric kernel determinant on multiple large intervals}'' (contributed), \href{https://indico.physik.uni-bielefeld.de/event/220/}{5th ZiF Summer School ``Randomness in Physics and Mathematics: From Thermalisation in Quantum Systems to Random Matrices''}, Universit\"{a}t Bielefeld, Bielefeld, Germany, 25 Aug--6 Sep, 2025. 
+    \item ``{\slshape Confluent hypergeometric kernel determinant on multiple large intervals}'' (contributed), \href{https://indico.physik.uni-bielefeld.de/event/220/}{5th ZiF Summer School ``Randomness in Physics and Mathematics: From Thermalisation in Quantum Systems to Random Matrices''}, Universit\"{a}t Bielefeld, Bielefeld, Germany, 25 Aug--6 Sep, 2025.
     \item ``{\slshape An introduction to Dubrovin's universality conjecture for integrable PDEs, and some progress on the Camassa-Holm equation}'' (invited), Seminar @UCLouvain, Louvain-la-Neuve, Belgium, 21 Aug, 2025.
     \item ``{\slshape Transient asymptotics of the modified Camassa-Holm equation}'' (invited), The 2nd Workshop on Integrable Systems and Random Matrix Theory, Dongguan, China, 5--17 Jan, 2025.
     \item ``{\slshape Integrable PDEs with nonzero boundary conditions: large-time asymptotics}'' (contributed), \href{https://math.nbu.edu.cn/info/1084/6870.htm}{The 15th Hemudu Forum on Integrable Systems}, Ningbo, China, 24--26 Nov, 2023.
-\end{enumerate}
-%------------------------------------------------------------------------------
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%-------------------------------------------------------------------------------
-\section{Other presentations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Other Presentations}
 \textbf{Outreach talks}
-\begin{enumerate}[--]
+\begin{itemize}
 \item ``{\sl Some asymptotic problems in mathematical physics}'' (invited), Shanghai Institute of Technical Physics, Shanghai, China, 29th Apr, 2025.
-\end{enumerate}
+\end{itemize}
+\vspace{1em}
 
+\noindent
 {\bf $12$ presentations} (including reading reports) given at Fudan Integrable Systems and Random Matrix Theory Seminar.
-%-------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
-%-------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \section{Attended activities}
-% \begin{enumerate}[--]
+% \begin{itemize}
 % \item 3rd Workshop on Integrable Systems and Random Matrix Theory 2026, Dongguan, China, 4--17 Jan, 2026.
-% \item \href{https://indico.physik.uni-bielefeld.de/event/220/}{5th ZiF Summer School ``Randomness in Physics and Mathematics: From Thermalisation in Quantum Systems to Random Matrices''}, Universit\"{a}t Bielefeld, Bielefeld, Germany, 25 Aug--6 Sep, 2025.  
+% \item \href{https://indico.physik.uni-bielefeld.de/event/220/}{5th ZiF Summer School ``Randomness in Physics and Mathematics: From Thermalisation in Quantum Systems to Random Matrices''}, Universit\"{a}t Bielefeld, Bielefeld, Germany, 25 Aug--6 Sep, 2025.
 % \item \href{https://sites.google.com/view/deift2025/home}{Universality, Nonlinearity, and Integrability, In honor of Percy Deift}, Seoul, Korea, 12--16 May, 2025.
-% \item The 2nd Workshop on Integrable Systems and Random Matrix Theory, Dongguan, China, 5--17 Jan, 2025. 
+% \item The 2nd Workshop on Integrable Systems and Random Matrix Theory, Dongguan, China, 5--17 Jan, 2025.
 % \item \href{https://sites.google.com/umich.edu/rmtschool/rmt2024}{Random Matrix Summer School}, University of Michigan, Ann Arbor, USA, 17--28 Jun, 2024.
 % \item \href{http://newton.kias.re.kr/~namgyu/index.html/Jeju24/}{Random Matrices and Related Topics}, Jeju island, Korea, 6--10 May, 2024.
 % \item \href{https://math.nbu.edu.cn/info/1084/6870.htm}{The 15th Hemudu Forum on Integrable Systems}, Ningbo, China, 24--26 Nov, 2023.
 % \item \href{https://focm2023.pages.math.cnrs.fr}{Foundations of Computational Mathematics 2023 (FoCM2023)}, Paris, France, 12--21 Jun, 2023.
 % \item \href{https://ims.nus.edu.sg/events/random-matrix-eurasia-2022/}{Random Matrix EurAsia 2022 (Online)}, Institute for Mathematical Sciences (IMS), National University of Singapore, Singapore, 18 Apr--13 May, 2022.
 % \item \href{http://math.nbu.edu.cn/info/1084/3673.htm}{The 13rd Hemudu Forum on Integrable Systems}, Ningbo, China, 15--17 Oct, 2021.
-% \end{enumerate}
-%-------------------------------------------------------------------------------
+% \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Academic Visits}
+\begin{cvlist}{}
+\item[22/06/2026 -- 25/06/2026] Jiangsu Normal University, China. (Host: Dong Yao)
+\item[18/08/2025 -- 24/08/2025] UCLouvain, Belgium. (Host: Christophe Charlier)
+\item[31/03/2025 -- 11/04/2025] Chongqing University, China. (Host: Yiling Yang)
+\end{cvlist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%-------------------------------------------------------------------------------
-\section{Academic visits}
-\begin{enumerate}[--]
-\item 22/06/2026 -- 25/06/2026, Jiangsu Normal University, China. (Host: Dong Yao)
-\item 18/08/2025 -- 24/08/2025, UCLouvain, Belgium. (Host: Christophe Charlier)
-\item 31/03/2025 -- 11/04/2025, Chongqing University, China. (Host: Yiling Yang)
-\end{enumerate}
-(I greatly appreciate for their warm hospitality)
-%-------------------------------------------------------------------------------
-
-
-
-%-------------------------------------------------------------------------------
-\section{Service}
-{\bf Co-organizer of the following activities}
-\begin{enumerate}[--]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Community Services}
+\textbf{Co-organized activities}
+\begin{itemize}
     \item (with Lun Zhang) Weekly RMT seminar @Fudan, 09/2022 -- 06/2026.
     \item (with Junwen Liu and Lun Zhang) \href{https://math.fudan.edu.cn/_upload/article/files/bf/bb/3eb14d574ea3bbb877861fd87c7b/56f02e01-5db4-4adb-8590-4b64eebccdbb.pdf}{Mini-workshop on Random Matrices}, Fudan University, Shanghai, China, 4 June, 2026.
     \item (with Engui Fan, Zhaoyu Wang, Yiling Yang and Lun Zhang) \href{https://math.fudan.edu.cn/_upload/article/files/a9/9c/8be14e254849b524c008b2093535/9f98a404-4d6d-41e8-95bc-7cad6f041059.pdf}{Workshop on Integrable Systems}, Fudan University, Shanghai, China, 28 Nov, 2025.
     \item (with Lun Zhang) \href{https://math.fudan.edu.cn/_upload/article/files/3a/3a/08debe5a45b4b2dea17af0208fee/a2664c71-3aaa-40cf-ba4b-412ba0816503.pdf}{Mini-workshop on Asymptotic Analysis}, Fudan University, Shanghai, China, 5--9 Jun, 2025.
-\end{enumerate}
+\end{itemize}
+\vspace{1em}
 
-
-{\bf Referee services provided for the following journals}
-\begin{enumerate}[--]
+\noindent \textbf{Referee services provided for the following journals}
+\begin{itemize}
     \item Analysis and Applications
     \item Journal of Nonlinear Mathematical Physics
     \item Qualitative Theory of Dynamical Systems
     \item Studies in Applied Mathematics
-\end{enumerate}
+\end{itemize}
+\vspace{1em}
 
-{\bf Other service}
-\begin{enumerate}[--]
+\noindent \textbf{Other service}
+\begin{itemize}
     \item zbMATH Open Reviewer
-\end{enumerate}
-%--------------------------------------------------------------------------------
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%-------------------------------------------------------------------------------
-\section{Scholarships and awards}
-\textbf{09/2019 -- 06/2024 @Fudan (Doctorate)}
-\begin{enumerate}[--]
-    \item Shanghai Outstanding Graduate (Graduation with Honors), 2024.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Honors, Awards and Scholarships}
+\textbf{09/2019 -- 06/2024 Fudan (Doctorate)}
+\begin{itemize}
+\item Shanghai Outstanding Graduate (Graduation with Honors), 2024.
     \item Huatai Securities Science and Technology Scholarship, 2023.
     \item Pacific Insurance Company Scholarship, 2022.
     \item Outstanding Doctoral Candidate Scholarship, Fudan University, 2021.
-    \item Fudan University Doctoral Scholarship, 2019--2023. 
-\end{enumerate}
+    \item Fudan University Doctoral Scholarship, 2019--2023.
+\end{itemize}
+\vspace{1em}
 
-\textbf{09/2015 -- 06/2019 @CUMT (Undergraduate)}
-\begin{enumerate}[--]
-    \item Outstanding Undergraduates in China University of Mining and Technology, 2019.
-\end{enumerate}
-%------------------------------------------------------------------------------
+\noindent \textbf{09/2015 -- 06/2019 CUMT (Undergraduate)}
+\begin{itemize}
+\item Outstanding Undergraduates in China University of Mining and Technology, 2019.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%-------------------------------------------------------------------------------
-\section{Status}
-\textbf{China} -- citizen, \textbf{Married}.
-%-------------------------------------------------------------------------------
-
-%-------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Languages}
-\begin{enumerate}[--]
+\begin{itemize}
 \item Chinese (native), The Qianwei dialect of Sichuanese (native)
-\item English 
-\end{enumerate}
-%-------------------------------------------------------------------------------
+\item English
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%-------------------------------------------------------------------------------
-\section{Computer skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Computer Skills}
 \LaTeX, Mathematica, Matlab, HTML, C++, Javascript
-%-------------------------------------------------------------------------------
-\end{resume}
-\begin{flushright}
-    \today
-\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{cv}
 \end{document}
