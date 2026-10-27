@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  27 OCT 2026 23:56
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  28 OCT 2026 00:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -326,13 +326,13 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
 
 ] [2]
-Overfull \hbox (0.55501pt too wide) in paragraph at lines 195--196
+Overfull \hbox (0.55501pt too wide) in paragraph at lines 199--200
 []\T1/lmr/m/n/12 Fall, 2025: Recita-tion & Tu-to-rial In-struc-tor of Math-e-mat-i-cal Anal-y-sis III (MATH130001.04). 
  []
 
 [3] [4] [5] (./CV_Taiyang.aux)
 Package rerunfilecheck Info: File `CV_Taiyang.out' has not changed.
-(rerunfilecheck)             Checksum: FB5479E3A39953B3399EF4576FA7013A;1442.
+(rerunfilecheck)             Checksum: 254D6A17E1F908EFBD2A66700A09222F;1542.
  ) 
 Here is how much of TeX's memory you used:
  10907 strings out of 476683
@@ -341,6 +341,6 @@ Here is how much of TeX's memory you used:
  31021 multiletter control sequences out of 15000+600000
  547794 words of font info for 54 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,6n,76p,394b,571s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,76p,394b,565s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on CV_Taiyang.pdf (5 pages).
