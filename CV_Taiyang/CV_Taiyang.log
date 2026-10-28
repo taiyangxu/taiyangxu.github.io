@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  28 OCT 2026 00:24
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.14)  28 OCT 2026 10:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -225,6 +225,8 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidth=\dimen157
 \titlewidthlast=\dimen158
 \titlewidthfirst=\dimen159
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \cvitemextraspace=\skip57
  (/usr/local/texlive/2023/texmf-dist/tex/latex/etaremune/etaremune.sty
@@ -332,14 +334,14 @@ Overfull \hbox (0.55501pt too wide) in paragraph at lines 199--200
 
 [3] [4] [5] (./CV_Taiyang.aux)
 Package rerunfilecheck Info: File `CV_Taiyang.out' has not changed.
-(rerunfilecheck)             Checksum: 254D6A17E1F908EFBD2A66700A09222F;1542.
+(rerunfilecheck)             Checksum: D293679971DF7194875B2FA73EDB0470;1391.
  ) 
 Here is how much of TeX's memory you used:
- 10907 strings out of 476683
- 175385 string characters out of 5804047
- 1850018 words of memory out of 5000000
- 31021 multiletter control sequences out of 15000+600000
- 547794 words of font info for 54 fonts, out of 8000000 for 9000
+ 10932 strings out of 476683
+ 176146 string characters out of 5804047
+ 1851018 words of memory out of 5000000
+ 31042 multiletter control sequences out of 15000+600000
+ 544795 words of font info for 53 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,6n,76p,394b,565s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
